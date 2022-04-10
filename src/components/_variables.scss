@@ -1,2 +1,29 @@
-$color-example: #ff0000;
-$fontsize-example: 16px;
+$white: #FFFFFF;
+$white_smoke: #F5F5F5;
+$gray_desertStorm: #ECE9E6;
+$gray_gainsboro: #DDDDDD;
+$gray_nobel: #999999;
+$orange_zprba: #A19283;
+$orange_bistre: #442606;
+$black_50: rgba(0, 0, 0, 0.5);
+$black: #000000;
+
+$XS: 12px;
+$S: 14px;
+$M: 16px;
+$L: 20px;
+$XL: 36px;
+$XXL: 40px;
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Noto+Serif+JP&family=Roboto&display=swap');
+$fontfamily-mincho: "Roboto","Noto Serif JP",serif;
+$fontfamily-gothic: "Roboto","Noto Sans JP",sans-serif;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
