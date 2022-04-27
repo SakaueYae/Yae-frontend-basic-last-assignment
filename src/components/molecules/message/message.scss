@@ -1,0 +1,28 @@
+@use "../../variables" as *;
+
+.message{
+    .title-text{
+        font-family: $fontfamily-mincho;
+    
+        @media screen and (min-width:$breakpoint-md) {
+            width: 160px;
+            height: 30px;
+        }
+        @media screen and (min-width:$breakpoint-lg) {
+            width: 287px;
+            height: 54px;
+        }
+    }
+
+    .descriptive-text{
+        font-family: $fontfamily-gothic;
+    
+        @media screen and (min-width:$breakpoint-md) {
+            width: 84px;
+            height: 28px;
+            @media screen and (min-width:$breakpoint-lg) {
+                height: 36px;
+            }    
+        }
+    }   
+}
