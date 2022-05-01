@@ -1,16 +1,32 @@
 @use "../../variables" as *;
 
 .message{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    @media screen and (min-width:$breakpoint-md) {
+        width: 185px;
+        height: 88px;
+    }
+    @media screen and (min-width:$breakpoint-lg) {
+        width: 327px;
+        height: 204px;
+    }
+
     .title-text{
         font-family: $fontfamily-mincho;
     
         @media screen and (min-width:$breakpoint-md) {
             width: 160px;
             height: 30px;
+            font-size: $fontsize-L;
         }
         @media screen and (min-width:$breakpoint-lg) {
             width: 287px;
             height: 54px;
+            font-size: $fontsize-XL;
         }
     }
 
@@ -20,9 +36,10 @@
         @media screen and (min-width:$breakpoint-md) {
             width: 84px;
             height: 28px;
-            @media screen and (min-width:$breakpoint-lg) {
-                height: 36px;
-            }    
+            font-size: $fontsize-S;
         }
+        @media screen and (min-width:$breakpoint-lg) {
+            height: 36px;
+        }    
     }   
 }
