@@ -5,24 +5,22 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    width: 185px;
+    height: 88px;
+    padding: 32px 20px;
 
-    @media screen and (min-width:$breakpoint-md) {
-        width: 185px;
-        height: 88px;
-    }
     @media screen and (min-width:$breakpoint-lg) {
         width: 327px;
         height: 204px;
+        padding: 52px 20px;
     }
 
     .title-text{
         font-family: $fontfamily-mincho;
-    
-        @media screen and (min-width:$breakpoint-md) {
-            width: 160px;
-            height: 30px;
-            font-size: $fontsize-L;
-        }
+        width: 160px;
+        height: 30px;
+        font-size: $fontsize-L;
+
         @media screen and (min-width:$breakpoint-lg) {
             width: 287px;
             height: 54px;
