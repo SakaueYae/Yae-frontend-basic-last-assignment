@@ -18,25 +18,28 @@
     .title-text{
         font-family: $fontfamily-mincho;
         width: 160px;
-        height: 30px;
+        height: 40px;
         font-size: $fontsize-L;
+        padding: 0px 0px 6px;
+        text-align: center;
 
         @media screen and (min-width:$breakpoint-lg) {
             width: 287px;
-            height: 54px;
+            height: 64px;
             font-size: $fontsize-XL;
+            padding: 0px 0px 10px;
         }
     }
 
     .descriptive-text{
         font-family: $fontfamily-gothic;
-    
-        @media screen and (min-width:$breakpoint-md) {
-            width: 84px;
-            height: 28px;
-            font-size: $fontsize-S;
-        }
+        width: 145px;
+        height: 28px;
+        font-size: $fontsize-S;
+        text-align: center;
+
         @media screen and (min-width:$breakpoint-lg) {
+            width: 287px;
             height: 36px;
         }    
     }   
