@@ -1,0 +1,28 @@
+@use "../../variables" as *;
+
+.atoms-btn{
+    background-color: $black;
+    font-size: $fontsize-S;
+    color: $white;
+    width: 180px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease;
+
+    @media screen and (min-width:$breakpoint-md){
+        width: 150px;
+        height: 55px;
+    }
+    @media screen and (min-width:$breakpoint-lg){
+        width: 200px;
+    }
+
+    
+    &:hover{
+        color: $white;
+        text-decoration: none;
+        background-color: $orange_bistre;
+    }
+}
