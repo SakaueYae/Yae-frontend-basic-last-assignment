@@ -1,0 +1,37 @@
+@use "../../variables" as *;
+
+.news-and-events-title{
+    display: flex;
+    width: 133px;
+    height: 61px;
+    justify-content: space-between;
+
+    @media screen and (min-width:$breakpoint-lg){
+        width: 184px;
+        height: 89px;
+    }
+
+    .news{
+        width: 53px;
+        height: 29px;
+        font-family: $fontfamily-mincho;
+        font-size: $fontsize-L;
+
+        @media screen and (min-width:$breakpoint-lg){
+            width: 105px;
+            height: 57px;
+            font-size: $fontsize-XXL;
+        }    
+    }
+
+    .notification{
+        width: 64px;
+        height: 23px;
+        font-size: $fontsize-M;
+
+        @media screen and (min-width:$breakpoint-lg){
+            width: 64px;
+            height: 23px;
+        }    
+    }
+}
