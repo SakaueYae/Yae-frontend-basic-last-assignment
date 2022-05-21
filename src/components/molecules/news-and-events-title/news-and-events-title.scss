@@ -1,9 +1,9 @@
 @use "../../variables" as *;
 
 .news-and-events-title{
-    display: flex;
     width: 133px;
     height: 61px;
+    display: flex;
     justify-content: space-between;
 
     @media screen and (min-width:$breakpoint-lg){
@@ -14,8 +14,8 @@
     .news{
         width: 53px;
         height: 29px;
-        font-family: $fontfamily-mincho;
         font-size: $fontsize-L;
+        font-family: $fontfamily-mincho;
 
         @media screen and (min-width:$breakpoint-lg){
             width: 105px;
@@ -27,11 +27,11 @@
     .notification{
         width: 64px;
         height: 23px;
+        margin-top: 3px;
         font-size: $fontsize-M;
 
         @media screen and (min-width:$breakpoint-lg){
-            width: 64px;
-            height: 23px;
+            margin-top: 17px;
         }    
     }
 }
