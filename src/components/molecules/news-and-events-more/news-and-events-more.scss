@@ -1,0 +1,12 @@
+@use "../../variables" as *;
+
+.notification-list{
+    width: 112px;
+    height: 20px;
+    font-family: $fontsize-S;
+    transition: color 0.2s ease;
+
+    &:hover{
+        color: $gray_nobel;
+    }
+}
