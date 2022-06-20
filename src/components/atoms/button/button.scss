@@ -10,6 +10,7 @@
     align-items: center;
     justify-content: center;
     transition: background-color 0.2s ease;
+    margin: auto;
 
     @media screen and (min-width:$breakpoint-md){
         width: 150px;
