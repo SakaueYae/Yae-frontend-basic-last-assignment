@@ -1,0 +1,46 @@
+@use "../../variables" as *;
+
+.table{
+    text-align: center;
+    .table-head{
+        color: $white;
+        font-size: $fontsize-L;
+        border-bottom-width: 0px;
+    }    
+    .table-body{
+        color: $black;
+        background-color: $white;
+        font-size: $fontsize-S;
+        .yen{
+            font-size: $fontsize-L;
+        }
+        .price{
+            font-size: $fontsize-XXL;
+        }
+
+        tr:nth-child(1){
+            background-color: $gray_desertStorm;
+            color: $orange_bistre;
+        }
+
+    }
+
+}
+
+.tabe-bordered{
+    border: 1px solid $gray_gainsboro;
+}
+
+.daytime{
+    .table-head{
+        background-color: $orange_zorba;
+    }
+}
+
+.standard{
+    border: 5px solid $orange_bistre;
+
+    .table-head{
+        background-color: $orange_bistre;
+    }
+}
