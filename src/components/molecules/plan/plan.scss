@@ -2,29 +2,34 @@
 
 .table{
     text-align: center;
-    .table-head{
+    margin-bottom: 24px;
+
+    .table-head *{
         color: $white;
         font-size: $fontsize-L;
-        border-bottom-width: 0px;
+        border: none;
     }    
+
     .table-body{
         color: $black;
         background-color: $white;
         font-size: $fontsize-S;
-        .yen{
-            font-size: $fontsize-L;
-        }
-        .price{
-            font-size: $fontsize-XXL;
-        }
-
         tr:nth-child(1){
             background-color: $gray_desertStorm;
-            color: $orange_bistre;
+            .yen{
+                font-size: $fontsize-L;
+                color: $orange_bistre;
+            }
+            .price{
+                font-size: $fontsize-XXL;
+                color: $orange_bistre;
+            }    
         }
-
     }
 
+    @media screen and (min-width:$breakpoint-md) {
+        margin-bottom: 0px;
+    }
 }
 
 .tabe-bordered{
