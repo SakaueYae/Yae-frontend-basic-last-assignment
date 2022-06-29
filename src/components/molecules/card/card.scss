@@ -1,24 +1,17 @@
 @use "../../variables" as *;
 
 .card{
-    display: flex;
-    align-items: center;
     background-color: $white-smoke;
     
     .card-body{    
         .card-text{
             text-align: center;
-            color: $black;
         }    
     }
 
     .img-frame{
         position: relative;
-        height: 382px;
         overflow: hidden;
-        @media screen and (min-width:$breakpoint-md) {
-            height: 175px;          
-        }    
 
         .card-title{
             position: absolute;
@@ -42,7 +35,7 @@
         .card-img-top{
             @media screen and (min-width:$breakpoint-md){
                 transition: all 0.5s ease;
-        
+
                  &:hover{
                     transform: scale(1.2);
                 }
