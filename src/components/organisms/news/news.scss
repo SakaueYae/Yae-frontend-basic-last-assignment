@@ -1,0 +1,27 @@
+@use "../../variables" as *;
+
+.organisms-news{
+    .news-table{
+        border: 1px solid $gray_gainsboro;
+
+        .news-row{
+            border-bottom: 1px solid $gray_gainsboro;
+
+            .news-date{
+                font-size: $fontsize-XS;
+                color: $gray_nobel;
+            }
+            .news-header{
+                font-size: $fontsize-M;
+            }
+            :last-child{
+                border-bottom: none;
+            }
+        }    
+    }
+    .notification-list{
+        text-align: right;
+        display: block;
+    }
+}
+
