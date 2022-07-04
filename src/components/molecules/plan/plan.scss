@@ -49,3 +49,45 @@
         background-color: $orange_bistre;
     }
 }
+
+.molecules-plan{
+    ul:nth-child(even){
+        border: 5px solid $orange_bistre;
+        li:nth-child(1){
+            background-color: $orange_bistre;
+        }
+    }
+
+    .list-group{
+        border-radius: 0;
+        text-align: center;
+        margin-bottom: 24px;
+        font-size: $fontsize-S;
+        background-color: $gray_gainsboro;
+
+        @media screen and (min-width:$breakpoint-md) {
+            margin-bottom: 0px;
+        }
+    
+        li:nth-child(1){
+            background-color: $orange_zorba;
+            color: $white;
+            font-size: $fontsize-L;
+            border: none;
+            font-weight: bold;
+        }
+    
+        li:nth-child(2){
+            background-color: $gray_desertStorm;
+    
+            .yen{
+                font-size: $fontsize-L;
+                color: $orange_bistre;
+            }
+            .price{
+                font-size: $fontsize-XXL;
+                color: $orange_bistre;
+            }    
+        }
+    }    
+}
