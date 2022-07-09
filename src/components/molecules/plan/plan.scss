@@ -1,60 +1,62 @@
 @use "../../variables" as *;
 
-.molecules-plan{
-    .list-group{
-        border-radius: 0;
-        text-align: center;
-        margin-bottom: 24px;
-        font-size: $fontsize-S;
-        background-color: $white;
+.molecules-plan {
+  .list-group {
+    border-radius: 0;
+    text-align: center;
+    margin-bottom: 24px;
+    font-size: $fontsize-S;
+    background-color: $white;
 
-        @media screen and (min-width:$breakpoint-md) {
-            margin-bottom: 0px;
-        }
-    
-        .list-group-item{
-            padding: 20px 19px;
-            border: 1px solid $gray_gainsboro;
-            border-top: none;
-            &:first-child{
-                background-color: $orange_zorba;
-                color: $white;
-                font-size: $fontsize-L;
-                border: none;
-                font-weight: bold;
-            }
-        
-            &:nth-child(2){
-                background-color: $gray_desertStorm;
-                padding: 24px 48px;
-        
-                .price{
-                    font-size: $fontsize-XXL;
-                    font-weight: bold;
-                    color: $orange_bistre;
-                    margin-bottom: 16px;
-                    .yen{
-                        font-size: $fontsize-L;
-                    }    
-                }    
-    
-                .monthly{
-                    margin: 0px;
-                }
-            }    
-        }
-        &:nth-child(even){
-            border: 5px solid $orange_bistre;
+    @media screen and (min-width: $breakpoint-md) {
+      margin-bottom: 0px;
+    }
 
-            .list-group-item{
-                &:first-child{
-                    background-color: $orange_bistre;
-                    padding-top: 15px;
-                }
-                &:last-child{
-                    padding-bottom: 15px;
-                }    
-            }
-        }    
-    }    
+    .list-group-item {
+      padding: 20px 19px;
+      border: 1px solid $gray_gainsboro;
+      border-top: none;
+
+      &:first-child {
+        background-color: $orange_zorba;
+        color: $white;
+        font-size: $fontsize-L;
+        border: none;
+        font-weight: bold;
+      }
+
+      &:nth-child(2) {
+        background-color: $gray_desertStorm;
+        padding: 24px 48px;
+
+        .price {
+          font-size: $fontsize-XXL;
+          font-weight: bold;
+          color: $orange_bistre;
+          margin-bottom: 16px;
+          .yen {
+            font-size: $fontsize-L;
+          }
+        }
+
+        .monthly {
+          margin: 0px;
+        }
+      }
+    }
+
+    &:nth-child(even) {
+      border: 5px solid $orange_bistre;
+
+      .list-group-item {
+        &:first-child {
+          background-color: $orange_bistre;
+          padding-top: 15px;
+        }
+        &:last-child {
+          padding-bottom: 15px;
+        }
+      }
+    }
+  }
 }
