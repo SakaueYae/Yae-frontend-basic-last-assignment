@@ -30,14 +30,21 @@
             background-color: $gray_desertStorm;
             padding: 24px 48px;
     
-            .yen{
-                font-size: $fontsize-L;
-                color: $orange_bistre;
-            }
             .price{
                 font-size: $fontsize-XXL;
+                font-weight: bold;
                 color: $orange_bistre;
+                margin-bottom: 16px;
+                .yen{
+                    font-size: $fontsize-L;
+                    font-weight: bold;
+                    color: $orange_bistre;
+                }    
             }    
+
+            .monthly{
+                margin: 0px;
+            }
         }
     }    
 
