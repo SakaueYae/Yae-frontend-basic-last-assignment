@@ -1,10 +1,10 @@
 @use "../../variables" as *;
 
 .organisms-news{
-    .news-table{
+    .news-list{
         border: 1px solid $gray_gainsboro;
 
-        .news-row{
+        .news-list-content{
             border-bottom: 1px solid $gray_gainsboro;
 
             .news-date{
@@ -14,11 +14,9 @@
             .news-header{
                 font-size: $fontsize-M;
             }
-            :last-child{
-                border-bottom: none;
-            }
         }    
     }
+
     .notification-list{
         text-align: right;
         display: block;
