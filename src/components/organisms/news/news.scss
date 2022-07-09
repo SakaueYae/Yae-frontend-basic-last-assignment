@@ -9,10 +9,15 @@
         .news-list-content{
             border-bottom: 1px solid $gray_gainsboro;
             padding: 20px;
+            cursor: pointer;
             transition: color 0.2s ease;
 
             &:hover{
                 color: $orange_bistre;
+            }    
+
+            &:last-child{
+                border-bottom: none;
             }    
 
             .news-date{
@@ -20,6 +25,7 @@
                 color: $gray_nobel;
                 margin-bottom: 10px;
             }
+            
             .news-header{
                 font-size: $fontsize-M;
                 margin-bottom: 0px;
@@ -28,10 +34,6 @@
                 text-overflow: ellipsis;
             }
         }    
-
-        article:last-child{
-            border-bottom: none;
-        }
     }
 
     .notification-list{
