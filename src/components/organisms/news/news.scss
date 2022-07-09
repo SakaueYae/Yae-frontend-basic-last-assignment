@@ -3,23 +3,39 @@
 .organisms-news{
     .news-list{
         border: 1px solid $gray_gainsboro;
+        background-color: $white;
+        margin-bottom: 30px;
 
         .news-list-content{
             border-bottom: 1px solid $gray_gainsboro;
+            padding: 20px;
+            transition: color 0.2s ease;
+
+            &:hover{
+                color: $orange_bistre;
+            }    
 
             .news-date{
                 font-size: $fontsize-XS;
                 color: $gray_nobel;
+                margin-bottom: 10px;
             }
             .news-header{
                 font-size: $fontsize-M;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
             }
         }    
+
+        article:last-child{
+            border-bottom: none;
+        }
     }
 
     .notification-list{
         text-align: right;
         display: block;
+        margin-bottom: 35px;
     }
 }
-
