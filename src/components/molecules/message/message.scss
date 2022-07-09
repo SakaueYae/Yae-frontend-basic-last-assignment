@@ -1,37 +1,37 @@
 @use "../../variables" as *;
 
-.message{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 32px 20px;
+.message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 32px 20px;
 
-    @media screen and (min-width:$breakpoint-lg) {
-        padding: 52px 20px;
+  @media screen and (min-width: $breakpoint-lg) {
+    padding: 52px 20px;
+  }
+
+  .title-text {
+    font-family: $fontfamily-mincho;
+    font-size: $fontsize-L;
+    text-align: center;
+    margin: 0px auto 8px;
+
+    @media screen and (min-width: $breakpoint-lg) {
+      font-size: $fontsize-XL;
+      margin: 0px auto 10px;
     }
+  }
 
-    .title-text{
-        font-family: $fontfamily-mincho;
-        font-size: $fontsize-L;
-        text-align: center;
-        margin: 0px auto 8px;
+  .descriptive-text {
+    font-size: $fontsize-S;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 28px;
 
-        @media screen and (min-width:$breakpoint-lg) {
-            font-size: $fontsize-XL;
-            margin: 0px auto 10px;
-        }
+    @media screen and (min-width: $breakpoint-lg) {
+      line-height: 36px;
     }
-
-    .descriptive-text{
-        font-size: $fontsize-S;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-        line-height: 28px;
-
-        @media screen and (min-width:$breakpoint-lg) {
-            line-height: 36px;
-        }    
-    }   
+  }
 }
