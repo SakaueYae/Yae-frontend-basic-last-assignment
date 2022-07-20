@@ -1,7 +1,7 @@
 @use "../../variables" as *;
 
 .notification-list {
-  font-family: $fontsize-S;
+  font-size: $fontsize-S;
   transition: color 0.2s ease;
   color: $black;
 
