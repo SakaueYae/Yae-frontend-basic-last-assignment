@@ -3,4 +3,4 @@ import "../components/molecules/news-and-events-more/news-and-events-more.scss";
 
 export default { title: "Molecules/Newsandeventsmore" };
 
-export const Message = () => Molecules_Newsandeventsmore;
+export const Newsandeventsmore = () => Molecules_Newsandeventsmore;
