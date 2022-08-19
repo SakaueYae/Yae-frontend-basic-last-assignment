@@ -1,8 +1,134 @@
 @use "../../variables" as *;
 
 .organisms-header {
-  .container-fluid {
-    background-color: rgba($color: $black, $alpha: 0.5);
-    color: $white;
+  padding: 0px 16px;
+  background-color: $black;
+
+  .header-wrap {
+    .header-logo {
+      padding: 0px;
+      margin: 20px 0px;
+
+      .header-img {
+        width: 120px;
+      }
+    }
+
+    .header-listicon {
+      outline: none;
+      padding: 0px;
+    }
+
+    .header-list-block {
+      .header-list {
+        .header-content {
+          .header-link {
+            color: $white;
+            padding: 15px 0px;
+          }
+        }
+
+        .concept {
+          padding: 0px;
+
+          .concept-button {
+            background-color: $black;
+            outline: none;
+            padding: 0px;
+          }
+
+          .concept-dropdown {
+            background-color: $black;
+            margin: 0px;
+            padding: 0px;
+            border: none;
+
+            .concept-dropdown-list {
+              .concept-dropdown-content {
+                .concept-dropdown-link {
+                  color: $white;
+                  padding: 15px 12px;
+
+                  &:hover {
+                    background-color: $black;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint-xl) {
+  .organisms-header {
+    background-color: $black_50;
+    padding: 0px 30px;
+
+    .header-wrap {
+      padding: 0px;
+
+      .header-logo {
+        margin: 0px;
+
+        .header-img {
+          width: 140px;
+        }
+      }
+
+      .header-list-block {
+        display: flex;
+        justify-content: flex-end;
+
+        .header-list {
+          .header-content {
+            background-color: inherit;
+            margin: 0px 20px;
+
+            .header-link {
+              padding: 35px 0px;
+              transition: color 0.2s ease;
+
+              &:hover {
+                color: $gray_nobel;
+              }
+            }
+          }
+
+          .concept {
+            position: relative;
+
+            .concept-dropdown {
+              display: none !important;
+              position: absolute;
+              top: 90px;
+              left: -20px;
+
+              .concept-dropdown-list {
+                flex-direction: column;
+
+                .concept-dropdown-content {
+                  .concept-dropdown-link {
+                    transition: background-color 0.2s ease;
+
+                    &:hover {
+                      background-color: $orange_bistre;
+                    }
+                  }
+                }
+              }
+            }
+
+            &:hover {
+              .concept-dropdown {
+                display: block !important;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
