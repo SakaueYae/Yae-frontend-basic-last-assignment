@@ -1,0 +1,15 @@
+@use "../../variables" as *;
+
+.organisms-about {
+  background-color: $white-smoke;
+
+  .about-img-block {
+    .about-img {
+      padding: 0px;
+    }
+  }
+
+  .about-title {
+    color: $orange_bistre;
+  }
+}
