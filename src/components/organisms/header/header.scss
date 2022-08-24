@@ -42,6 +42,7 @@
             margin: 0px;
             padding: 0px;
             border: none;
+            flex-basis: 100%;
 
             .concept-dropdown-list {
               .concept-dropdown-content {
@@ -101,7 +102,7 @@
             position: relative;
 
             .concept-dropdown {
-              display: none !important;
+              display: none;
               position: absolute;
               top: 90px;
               left: -20px;
@@ -123,7 +124,7 @@
 
             &:hover {
               .concept-dropdown {
-                display: block !important;
+                display: block;
               }
             }
           }
