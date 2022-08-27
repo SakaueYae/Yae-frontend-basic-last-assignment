@@ -5,32 +5,33 @@
   text-align: center;
   color: $white;
 
-  .top-img-block {
+  .top-img {
     position: relative;
-    overflow: hidden;
+    height: 360px;
+    background-image: url(../../../img/top-image.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 
-    .top-img {
-      height: 360px;
-
-      @media screen and (min-width: $breakpoint-lg) {
-        height: auto;
-        width: 100%;
-      }
+    @media screen and (min-width: $breakpoint-lg) {
+      height: 0;
+      padding-top: 70%;
+      background-size: 100% auto;
     }
+  }
 
-    .top-img-logo {
-      writing-mode: vertical-rl;
-      font-family: $fontfamily-mincho;
-      font-size: $fontsize-L;
-      margin: 0px;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+  .top-img-logo {
+    writing-mode: vertical-rl;
+    font-family: $fontfamily-mincho;
+    font-size: $fontsize-L;
+    margin: 0px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
-      @media screen and (min-width: $breakpoint-lg) {
-        font-size: $fontsize-XL;
-      }
+    @media screen and (min-width: $breakpoint-lg) {
+      font-size: $fontsize-XL;
     }
   }
 }
