@@ -1,0 +1,13 @@
+@use "../../variables" as *;
+
+.organisms-plans {
+  .message {
+    .title-text {
+      color: $orange_bistre;
+    }
+  }
+
+  .atoms-btn {
+    margin: auto;
+  }
+}
