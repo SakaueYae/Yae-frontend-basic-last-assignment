@@ -1,0 +1,14 @@
+@use "../../variables" as *;
+
+.organisms-footer {
+  .footer-logo {
+    .footer-img {
+      width: 150px;
+      background-color: $black;
+    }
+  }
+
+  .footer-information {
+    text-align: center;
+  }
+}
