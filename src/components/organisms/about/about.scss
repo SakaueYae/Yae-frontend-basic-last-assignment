@@ -1,0 +1,20 @@
+@use "../../variables" as *;
+
+.organisms-about {
+  background-color: $white-smoke;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: $breakpoint-lg) {
+    margin-bottom: 100px;
+  }
+
+  .about-img-block {
+    .about-img {
+      padding: 0px;
+    }
+  }
+
+  .about-title {
+    color: $orange_bistre;
+  }
+}
