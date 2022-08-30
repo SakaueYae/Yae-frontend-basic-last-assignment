@@ -1,14 +1,97 @@
 @use "../../variables" as *;
 
 .organisms-footer {
-  .footer-logo {
-    .footer-img {
-      width: 150px;
-      background-color: $black;
+  font-size: $fontsize-S;
+
+  .footer-upper-block {
+    text-align: center;
+    padding: 32px;
+
+    @media screen and (min-width: $breakpoint-md) {
+      padding: 52px;
+    }
+
+    .footer-logo {
+      .footer-img {
+        width: 150px;
+      }
+    }
+
+    .footer-information {
+      margin: 20px 0px;
+      text-align: center;
+      line-height: 28px;
+    }
+
+    .icon-list {
+      width: 98px;
+      margin: 0 auto;
+      display: inline-flex;
+      justify-content: space-between;
+
+      .icon {
+        text-decoration: none;
+        transition: color 0.2s ease;
+        color: $black;
+
+        &:hover {
+          color: $gray_nobel;
+        }
+      }
     }
   }
 
-  .footer-information {
+  .footer-lower-block {
+    background-color: $white-smoke;
+    padding: 16px;
+    padding-bottom: 8px;
+
+    @media screen and (min-width: $breakpoint-md) {
+      padding-bottom: 16px;
+    }
+
+    .footer-list {
+      padding-left: 0px;
+      margin-bottom: 0px;
+      list-style: none;
+      column-count: 2;
+
+      @media screen and (min-width: $breakpoint-md) {
+        display: flex;
+        justify-content: center;
+      }
+
+      .footer-content {
+        margin-bottom: 8px;
+
+        @media screen and (min-width: $breakpoint-md) {
+          margin: 0px;
+          padding: 0px 8px;
+          border-right: 1px solid $black;
+
+          &:last-child {
+            border-right: none;
+          }
+        }
+
+        .footer-link {
+          color: $black;
+          transition: color 0.2s ease;
+          text-decoration: none;
+
+          &:hover {
+            color: $orange-bistre;
+          }
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    color: $white;
+    background-color: $black;
+    font-size: $fontsize-XS;
     text-align: center;
+    padding: 16px;
   }
 }
