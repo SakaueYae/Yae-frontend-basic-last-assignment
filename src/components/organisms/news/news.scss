@@ -1,6 +1,8 @@
 @use "../../variables" as *;
 
 .organisms-news {
+  margin-bottom: 35px;
+
   .news-list {
     border: 1px solid $gray_gainsboro;
     background-color: $white;
@@ -28,6 +30,7 @@
 
       .news-header {
         font-size: $fontsize-M;
+        font-weight: 400;
         margin-bottom: 0px;
         white-space: nowrap;
         overflow: hidden;
@@ -36,9 +39,7 @@
     }
   }
 
-  .notification-list {
+  .notification-list-block {
     text-align: right;
-    display: block;
-    margin-bottom: 35px;
   }
 }

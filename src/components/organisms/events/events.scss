@@ -9,6 +9,7 @@
   .events-list {
     border: 1px solid $gray_gainsboro;
     margin-bottom: 30px;
+    background-color: $white;
 
     .events-list-content {
       border-bottom: 1px solid $gray_gainsboro;
@@ -37,16 +38,18 @@
           }
 
           .events-img {
+            height: 141px;
             transition: all 0.5s ease;
           }
         }
 
         .events-header-block {
-          margin: 10px 20px 16px;
+          padding: 10px 20px 16px;
           overflow: hidden;
 
           @media screen and (min-width: $breakpoint-lg) {
-            margin: 26px 24px;
+            padding: 26px 24px;
+            flex: 1;
           }
 
           .events-header {
