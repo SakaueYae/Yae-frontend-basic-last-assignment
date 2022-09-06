@@ -20,6 +20,7 @@
 
       .events-list-url {
         display: flex;
+        align-items: center;
 
         &:hover {
           text-decoration: none;
@@ -44,11 +45,11 @@
         }
 
         .events-header-block {
-          padding: 10px 20px 16px;
+          padding: 10px 20px;
           overflow: hidden;
 
           @media screen and (min-width: $breakpoint-lg) {
-            padding: 26px 24px;
+            padding: 10px 24px;
             flex: 1;
           }
 
