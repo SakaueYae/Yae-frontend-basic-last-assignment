@@ -26,6 +26,7 @@
         font-size: $fontsize-XS;
         color: $gray_nobel;
         margin-bottom: 10px;
+        line-height: 12px;
       }
 
       .news-header {
@@ -35,6 +36,7 @@
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+        line-height: 23px;
       }
     }
   }
