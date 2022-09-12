@@ -3,6 +3,10 @@
 .organisms-header {
   padding: 0px 16px;
   background-color: $black;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  left: 0px;
 
   .header-wrap {
     .header-logo {
