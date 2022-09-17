@@ -2,9 +2,11 @@
 
 .templates-newsandevents {
   background-color: $white-smoke;
-  padding: 65px 135px;
+  padding-top: 65px;
+  padding-bottom: 65px;
 
   @media screen and (min-width: $breakpoint-lg) {
-    padding: 56px 16px 59px;
+    padding-top: 56px;
+    padding-bottom: 59px;
   }
 }
